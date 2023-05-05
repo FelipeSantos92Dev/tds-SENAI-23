@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../../assets/js/revisao-crime.js"></script>
+    <title>Revisão | Crime</title>
+  </head>
+  <body>
+    <div>
+      <h3>Telefonou para a vítima?</h3>
+      <label>Sim</label>
+      <input type="radio" name="tel" />
+      <label>Não</label>
+      <input type="radio" name="tel" />
+    </div>
+    <div>
+      <h3>Esteve no local do crime?</h3>
+      <label>Sim</label>
+      <input type="radio" name="local" />
+      <label>Não</label>
+      <input type="radio" name="local" />
+    </div>
+    <div>
+      <h3>Mora perto da vítima?</h3>
+      <label>Sim</label>
+      <input type="radio" name="mora" />
+      <label>Não</label>
+      <input type="radio" name="mora" />
+    </div>
+    <div>
+      <h3>Devia para a vítima?</h3>
+      <label>Sim</label>
+      <input type="radio" name="devia" />
+      <label>Não</label>
+      <input type="radio" name="devia" />
+    </div>
+    <div>
+      <h3>Já trabalhou com a vítima?</h3>
+      <label>Sim</label>
+      <input type="radio" name="trabalhou" />
+      <label>Não</label>
+      <input type="radio" name="trabalhou" />
+    </div>
+
+    <button onclick="crime()">CSI</button>
+
+    <p>Resultado: <span id="resultado">...</span></p>
+  </body>
+</html>
