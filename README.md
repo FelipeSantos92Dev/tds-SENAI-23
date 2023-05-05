@@ -2,4 +2,4 @@
 
 ## SENAI TDS - Turmas 2023
 
-### Sintam-se livres para sugestões/críticas.
+Sintam-se livres para sugestões/críticas.
