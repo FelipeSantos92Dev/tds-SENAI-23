@@ -2,9 +2,9 @@ function ordenar() {
   let lista = [];
   let ordenado = [];
 
-  lista[0] = document.getElementById("n1").value;
-  lista[1] = document.getElementById("n2").value;
-  lista[2] = document.getElementById("n3").value;
+  lista[0] = Number(document.getElementById("n1").value);
+  lista[1] = Number(document.getElementById("n2").value);
+  lista[2] = Number(document.getElementById("n3").value);
 
   // Verificação de campos vazios
   if (lista[0] == "" || lista[1] == "" || lista[2] == "") {
@@ -15,6 +15,7 @@ function ordenar() {
   // Short way :)
   // document.getElementById("resultado").innerHTML = lista.sort();
 
+  // Long way :(
   if (lista[0] <= lista[1] && lista[0] <= lista[2]) {
     // lista[0] é o menor
     ordenado[0] = lista[0];

@@ -18,14 +18,61 @@
     <title>Arrays</title>
   </head>
   <body>
-    <div>
-      <label>Digite 3 números:</label>
-      <input type="number" id="n1" />
-      <input type="number" id="n2" />
-      <input type="number" id="n3" />
-    </div>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="../../index.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Aulas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Condicionais</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Array</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Laço de Repetição</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <button onclick="ordenar()">Ordenar</button>
-    <p>Resultado: <span id="resultado"></span></p>
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">Aulas Javascript - Lógica de Programação</h1>
+        </div>
+      </div>
+
+      <div>
+        <label>Digite 3 números:</label>
+        <input type="number" id="n1" />
+        <input type="number" id="n2" />
+        <input type="number" id="n3" />
+      </div>
+
+      <button onclick="ordenar()">Ordenar</button>
+      <p>Resultado: <span id="resultado"></span></p>
+    </div>
   </body>
 </html>

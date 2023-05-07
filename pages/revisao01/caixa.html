@@ -18,20 +18,66 @@
     <title>Revisão | Caixa</title>
   </head>
   <body>
-    <h1>Exercício Caixa Eletrônico</h1>
-    <div>
-      <label>Digite o valor do seu saque: R$ </label>
-      <input type="number" placeholder="Máximo de R$ 1000" id="valor" />
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="/index.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Aulas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Condicionais</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Array</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Laço de Repetição</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">Aulas Javascript - Lógica de Programação</h1>
+        </div>
+      </div>
+      <h1>Exercício Caixa Eletrônico</h1>
+      <div>
+        <label>Digite o valor do seu saque: R$ </label>
+        <input type="number" placeholder="Máximo de R$ 1000" id="valor" />
+      </div>
+
+      <button onclick="saque()">Sacar</button>
+
+      <p>Cédulas de R$ 100: <span id="notas100">...</span></p>
+      <p>Cédulas de R$ 50: <span id="notas50">...</span></p>
+      <p>Cédulas de R$ 20: <span id="notas20">...</span></p>
+      <p>Cédulas de R$ 10: <span id="notas10">...</span></p>
+      <p>Cédulas de R$ 5: <span id="notas5">...</span></p>
+      <p>Cédulas de R$ 2: <span id="notas2">...</span></p>
+      <p>Cédulas de R$ 1: <span id="notas1">...</span></p>
     </div>
-
-    <button onclick="saque()">Sacar</button>
-
-    <p>Cédulas de R$ 100: <span id="notas100">...</span></p>
-    <p>Cédulas de R$ 50: <span id="notas50">...</span></p>
-    <p>Cédulas de R$ 20: <span id="notas20">...</span></p>
-    <p>Cédulas de R$ 10: <span id="notas10">...</span></p>
-    <p>Cédulas de R$ 5: <span id="notas5">...</span></p>
-    <p>Cédulas de R$ 2: <span id="notas2">...</span></p>
-    <p>Cédulas de R$ 1: <span id="notas1">...</span></p>
   </body>
 </html>
