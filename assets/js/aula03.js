@@ -109,29 +109,3 @@ function lista() {
     console.log(valor + " x " + i + " = " + resultado);
   }
 } */
-
-function receber() {
-  var readline = require("readline");
-  var valor = 0;
-  var valor1 = 0;
-  var conj = [];
-
-  var leitor = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
-
-  leitor.question(
-    "Digite a quantidade de itens do conjunto: ",
-    function (resp, vet) {
-      valor = resp;
-      for (var i = 0; i < valor; i++) {
-        console.log("Digite o valor de indice " + i);
-        valor1 = vet;
-        conj.push(valor1);
-      }
-      console.log(conj);
-      leitor.close();
-    }
-  );
-}

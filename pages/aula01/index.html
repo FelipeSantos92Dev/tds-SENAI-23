@@ -1,95 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
-    <title>Calculadora</title>
-    <meta charset="utf-8" />
-    <style>
-      /* Estilos para a calculadora */
-      body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-      }
-      #calculadora {
-        display: inline-block;
-        text-align: left;
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: 10px;
-      }
-      .linha {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 5px;
-      }
-      .botao {
-        font-size: 18px;
-        padding: 5px 10px;
-        border-radius: 3px;
-        background-color: lightgray;
-        cursor: pointer;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../../assets/js/aula01.js"></script>
+    <title>Salário</title>
   </head>
   <body>
-    <h1>Calculadora</h1>
+    <h1>Reajuste de Salário</h1>
 
-    <div id="calculadora">
-      <div class="linha">
-        <input id="visor" type="text" readonly />
-      </div>
-      <div class="linha">
-        <button class="botao" onclick="limpar()">C</button>
-        <button class="botao" onclick="apagar()">←</button>
-        <button class="botao" onclick="adicionar('/')">÷</button>
-        <button class="botao" onclick="adicionar('*')">x</button>
-      </div>
-      <div class="linha">
-        <button class="botao" onclick="adicionar('7')">7</button>
-        <button class="botao" onclick="adicionar('8')">8</button>
-        <button class="botao" onclick="adicionar('9')">9</button>
-        <button class="botao" onclick="adicionar('-')">-</button>
-      </div>
-      <div class="linha">
-        <button class="botao" onclick="adicionar('4')">4</button>
-        <button class="botao" onclick="adicionar('5')">5</button>
-        <button class="botao" onclick="adicionar('6')">6</button>
-        <button class="botao" onclick="adicionar('+')">+</button>
-      </div>
-      <div class="linha">
-        <button class="botao" onclick="adicionar('1')">1</button>
-        <button class="botao" onclick="adicionar('2')">2</button>
-        <button class="botao" onclick="adicionar('3')">3</button>
-        <button class="botao" onclick="calcular()">=</button>
-      </div>
-      <div class="linha">
-        <button class="botao" onclick="adicionar('0')">0</button>
-        <button class="botao" onclick="adicionar('.')">.</button>
-      </div>
+    <div>
+      <label>Digite o seu salário atual: R$</label>
+      <input
+        type="number"
+        placeholder="sem ponto ou vírgula"
+        id="salarioInicial"
+      />
     </div>
 
-    <script>
-      // Funções para a calculadora
-      function adicionar(valor) {
-        document.getElementById("visor").value += valor;
-      }
-
-      function limpar() {
-        document.getElementById("visor").value = "";
-      }
-
-      function apagar() {
-        let valor = document.getElementById("visor").value;
-        document.getElementById("visor").value = valor.substring(
-          0,
-          valor.length - 1
-        );
-      }
-
-      function calcular() {
-        let expressao = document.getElementById("visor").value;
-        let resultado = eval(expressao);
-        document.getElementById("visor").value = resultado;
-      }
-    </script>
+    <button onclick="calcular()">Calcular</button>
+    <p>Salário Inicial: R$ <span id="salIni">...</span></p>
+    <p>Porcentagem de Aumento: <span id="porc">...</span></p>
+    <p>Aumento: R$ <span id="aumento">...</span></p>
+    <p>Salário Final: R$ <span id="salFin">...</span></p>
   </body>
 </html>
