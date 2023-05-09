@@ -1,7 +1,7 @@
 //alert("Hello, Crianças aleatórias!");
 
 // Receber vários dados via prompt e armazenar num array
-
+/* 
 let entrada;
 let dados = [];
 let contador = 0;
@@ -17,7 +17,7 @@ while (entrada != "FIM") {
   // dados = [entrada] Sobrescreve a primeira posição do array
   entrada = prompt("Digite um dado ou FIM para encerrar");
 }
-
+ */
 // Exibir dados do array
 //console.log(dados);
 
